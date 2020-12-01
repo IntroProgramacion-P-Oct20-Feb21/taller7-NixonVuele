@@ -13,18 +13,17 @@ public class problema4 {
         int numerador = 1;
         int contadorDenominador = 3;
         String cadena = "";
-        double operacion = 0;
+        double operacion = 1;
         cadena = String.format("%s%d", cadena, numerador);
-        operacion = operacion + numerador;
         for (int contador = 1; contador <= 7; contador++) {
             if ((contador % 2) == 0){
                 cadena = String.format("%s + %d/%d",cadena,numerador,
                         contadorDenominador);
-                operacion = operacion + (double)numerador/contadorDenominador;
+                operacion = operacion + ((double)numerador/contadorDenominador);
             } else {
                 cadena = String.format("%s - %d/%d",cadena,numerador,
                         contadorDenominador);
-                operacion = operacion - (double)numerador/contadorDenominador;
+                operacion = operacion - ((double)numerador/contadorDenominador);
             }
             contadorDenominador = contadorDenominador + 2;
         }
