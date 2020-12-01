@@ -43,7 +43,7 @@ public class Ejemplo04 {
         // contador para saber el número de iteraciones
         int contadorIteraciones = 0;
         // variables para promedio
-        int promedioEdad;
+        double promedioEdad=0;
         double promedioEstatura;
         cadenaReporte = String.format("%s%s\n", cadenaReporte, 
                 "Listado de Jugadores");
@@ -83,10 +83,10 @@ public class Ejemplo04 {
             }
         } while (bandera);
         
-        promedioEdad = sumaEdades/contadorIteraciones;
+        promedioEdad = (double)sumaEdades/contadorIteraciones;
         promedioEstatura = sumaEstaturas/contadorIteraciones;
         // Promedio de edades:  ?
-        cadenaReporte = String.format("%sPromedio de edades: %d\n", 
+        cadenaReporte = String.format("%sPromedio de edades: %.2f\n", 
                 cadenaReporte, promedioEdad);
         // Promedio de estaturas: ?
         cadenaReporte = String.format("%sPromedio de estaturas: %.2f\n", 

@@ -19,7 +19,7 @@ public class Ejemplo01 {
         int contador = 1;
         
         while (contador<=5) {
-            if((contador%2)==0){
+            if((contador%2)==0){//1%2=0  2%2=0  3%2=0  5%2=0  
                 System.out.printf("%s%d/%d", "-", numerador, denominador);
             }else{
                 System.out.printf("%s%d/%d", "+", numerador, denominador);

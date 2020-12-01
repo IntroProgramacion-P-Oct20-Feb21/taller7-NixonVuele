@@ -20,6 +20,7 @@ public class Ejemplo03 {
         do {
             System.out.println("Desea salir del ciclo; digite: si");
             salir = entrada.nextLine();
+            salir= salir.toLowerCase();
             if(salir.equals("si")){
                 bandera = false;
             }
